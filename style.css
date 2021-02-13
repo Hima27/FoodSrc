@@ -6,3 +6,16 @@ body, html {height: 100%}
     background-position: center;
     background-size: cover;
 }
+
+.search-nearby {
+    width: 70%;
+    height: 65%;
+    background-color: rgba(219, 232, 240, 0.623);
+    margin-right: auto;
+    margin-left: auto;
+    overflow-y: auto;
+}
+
+.postal-code-input {
+    display: inline-block;
+}
