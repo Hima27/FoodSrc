@@ -1,0 +1,14 @@
+{
+  "name": "foodsrc",
+  "version": "1.0.0",
+  "description": "UI for displaying disgarded foods in local community",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hima, Sulaksa, Adriana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
