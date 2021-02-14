@@ -1,8 +1,43 @@
-body,h1 {font-family: "Raleway", sans-serif}
+body,
+h1 {
+  font-family: "Raleway", sans-serif;
+}
 
-body, html {height: 100%}
+body,
+html {
+  height: 100%;
+}
+
 .img {
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.hero {
+  width: 50%;
+  float: right;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.875), rgba(0, 0, 0, 0.8)), url(../IMG/fruits.jpg);
+  background-color: #000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  letter-spacing: 3px;
+  font-size: 100px;
+}
+
+.hero p {
+  font-size: 60px;
 }
