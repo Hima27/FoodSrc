@@ -3,27 +3,104 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <meta http-equiv="refresh" content="60">
 
     <body>
 
-        <div class="search-nearby" id="search-nearby">
-            <span class="postal-code-input">
-                <form class="postal-code-input">
-                    <input class="input-box" type="text" id="postal-code" placeholder="A1B 2C3">
-    
-                </form>
-
-                <button class="map-search-button">Find Nearby Locations</button>
-                
-
-
-    
-            </span>
-
+        
+        <img style="width:150px;height:96px;margin-bottom:90px;margin-left:2%;margin-top:20px" src="logo.png">
+        <div style="height:600px">
+        <div class="w3-container">
+                <div class="hero-inner">
+                        <h1>Welcome to <span>FoodSrc</span></h1>
+                        <p>Food Src will make eating healthier foods more accessible while reducing food waste</p>
+                        <div class="separator-info-subtitle">Buy now</div>
+                        <p style="transform: rotate(90deg); position:absolute; font-size:50px; margin-top:90px">⟶</p>
+                    </div>
+            <section class="hero"></section>
         </div>
 
+    </div>
+    <div class="our-mission">
+        <h2>Our mission</h2>
+        <p>At Food Src, our values-driven team aims to assist reduce food waste, while making healthy food accessible to everyone. Our easy to use web app will make 
+
+            Over 800,000 families visit food banks every month in Canada while retailers are turning away food because it doesn’t meet the size & shape requirements to go on shelves. As Canadians, we waste 13 million tonnes of food per year. Food is wasted in various areas of the food supply chain, and there is a large number from There is no reason why consumers & retailers shouldn’t benefit from selling these products.
+            
+            As we look to take better care of ourselves and fuel our bodies, the price tag for this goes up.</p>
+    </div>
+
+    <div class="search-nearby" id="search-nearby">
+        <span class="postal-code-input">
+            <form class="postal-code-input">
+                <input class="input-box" type="text" id="postal-code" placeholder="A1B 2C3">
+
+            </form>
+
+            <button id="map-search-button" class="map-search-button">Find Nearby Locations</button>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div id="map">
+                <div class="maps" >
+        
+        
+                    <div id="googleMap" style="width:200%;height:500px;"></div>
+        
+                    <script>
+                        function myMap() {
+                            var location = {lat: 43.6677, lng: -79.3788}
+                            var map = new google.maps.Map(document.getElementById("googleMap"),{zoom: 13.25, center: location});
+
+                            const image ="store-marker.png";
+
+                            var marker = new google.maps.Marker({position: location,map: map,title: 'You are here'});
+                            marker.setMap(map);
+                            var jTP = {lat: 43.6677, lng: -79.3788};
+                            var one = {lat: 43.658372, lng: -79.376439};
+                            var two = {lat: 43.662061, lng: -79.380033};
+                            var three = {lat: 43.669418, lng: -79.339293};
+
+                            var marker = new google.maps.Marker({position: jTP, map: map, title: 'You are Here'});
+                            var closest = new google.maps.Marker({position: one, map: map, title: 'Foodland - Toronto', icon: image});
+                            var further = new google.maps.Marker({position: two, map: map, title: 'Loblaws'});
+                            var furthest = new google.maps.Marker({position: three, map: map, title: 'walmart'});
+                            
+                        }
+
+                    </script>
+        
+                    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwol6frqbspgft2arNNSyr1cIEngYWXw0&callback=myMap" type="text/javascript">
+                    </script>
+
+        
+                </div>
+            </div>
+        </span>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <footer class="site-footer">
+        <h6><a href="#Agencia">FoodSrc</a></h6>
+        <ul class="footerLinks">
+            <li><img src="location.png">Lorem Ipsum</li>
+            <li><img src="telephone.png">+423423423</li>
+            <li><img src="email.png">foodsrc@contact.com</li>
+        </ul>
+        <hr>
+        <div class="copyrightText">
+            <p class="copyright-text">Copyright &copy; 2021 - FoodSrc</p>
+        </div>
+    </footer>
     </body>
 </html>
