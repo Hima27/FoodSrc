@@ -133,7 +133,7 @@ html {
     background-color: #f3f3f3;
   }
 
-  .site-footer
+.site-footer
 {
   background-color:#26272b;
   padding:45px 0 10px;
@@ -142,6 +142,8 @@ html {
   line-height:24px;
   color:#737373;
 }
+
+
 
 .site-footer hr
 {
@@ -185,7 +187,7 @@ html {
 
 .search-nearby {
     width: 70%;
-    height: 65%;
+    height: 100%;
     background-color: rgba(219, 220, 221, 0.623);
     margin-right: auto;
     margin-left: auto;
@@ -193,7 +195,74 @@ html {
     border-color: #000;
 }
 
+.results {
+    display: flex;
+}
+
+.googleMap {
+    width:170%; 
+    height:400px; 
+    margin-left:5%
+
+}
+.results-list {
+}
+
+.map-search-button, .postal-code-input {
+    margin-top: 3%;
+}
+
+.postal-code-input, .map-search-button {
+    margin-left: 20px;
+}
+
+.map-search-button {
+    height: 35px;
+}
+
+.input-box {
+    height: 30px;
+}
+
 .postal-code-input {
     display: inline-block;
     vertical-align: auto;
 }
+
+.main-navigation a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+    font-weight: 300;
+  }
+  
+  .main-navigation .current-menu-item a,
+  .main-navigation a:hover {
+    color: #FAF0CA;
+  }
+  
+  
+  .main-navigation {
+    padding-top: 2px;
+    float:right;
+    margin-top:50px;
+  }
+  
+  .main-navigation ul {
+    padding: 0;
+    margin: 0;
+    display:flex;
+    list-style-type: none;
+    margin-right:100px;
+  }
+  
+  .main-navigation ul:before,
+    .main-navigation ul:after {
+    content: " ";
+    display: table;
+  }
+  
+  .main-navigation ul:after {
+    clear: both;
+  }
